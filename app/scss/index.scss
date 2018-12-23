@@ -1,0 +1,135 @@
+/* ---------------------- header ---------------------- */
+header {
+	height: 90px;
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	background: #fff;
+	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
+	
+	.section-inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+
+	.cont-logo {
+		margin-right: 20px;
+	}
+	.main-menu {
+		display: inline-block;
+		vertical-align: middle;
+
+		ul {
+			display: flex;
+			li {
+				margin: 0 10px;
+				a {
+					@include f-r;
+					font-size: 18px;
+					color: #393939;
+					transition: 0.5s;
+					text-transform: uppercase;
+				}
+
+				&.current_page_item, &:hover {
+					a {
+						color: #4a9ff0;
+					}
+				}
+			} 
+		}
+	}
+
+	.icons {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 20px;
+
+		.icon {
+			width: 40px;
+			height: 40px;
+			background: #005db7;
+			border-radius: 100%;
+			position: relative;
+			transition: 0.5s;
+			cursor: pointer;
+			&:hover {
+				background: #4A9FF0;
+			}
+			.inner {
+				@include f-r;
+				font-size: 20px;
+				color: #fff;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+/* --------------------- /header ---------------------- */
+
+
+/* ---------------------- Section slider-top ---------------------- */
+section.slider-top {
+	position: relative;
+	overflow: visible;
+	.decor {
+		position: absolute;
+		right: 0;
+		bottom: -300px;
+		z-index: 2;
+	}
+	.section-inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		
+		.container {
+			width: 50%;
+			margin-right: 0;
+			margin-left: auto;
+		}
+		.title {
+			@include f-sb;
+			font-size: 50px;
+			line-height: 50px;
+			color: #005db7;
+			text-transform: uppercase;
+
+		}
+
+		.text {
+			@include f-r;
+			font-size: 28px;
+			color: #393939;
+		}
+
+		.button {
+			display: inline-block;
+			@include f-m;
+			font-size: 20px;
+			color: #005db7;
+
+			background: #86bef5;
+			padding: 17px 35px;
+			border-radius: 50px;
+
+			margin-top: 20px;
+
+			transition: 0.5s;
+
+			&:hover {
+				background: #005db7;
+				color: #fff;
+			}
+		}
+
+	}
+}
+/* --------------------- /Section slider-top ---------------------- */

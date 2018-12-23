@@ -1,0 +1,162 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Cabin+Condensed:400,500,600,700");
+/* /Fonts */
+/* Global */
+html {
+  margin: 0 !important; }
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  color: #232323; }
+
+a {
+  text-decoration: none; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  direction: ltr; }
+
+p {
+  margin: 0; }
+
+ul {
+  -webkit-padding-start: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+section {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+  overflow: hidden; }
+
+.section-inner {
+  max-width: 1250px;
+  padding: 0 10px;
+  width: 100%;
+  margin: auto; }
+
+/* ---------------------- header ---------------------- */
+header {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
+          box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25); }
+  header .section-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; }
+  header .cont-logo {
+    margin-right: 20px; }
+  header .main-menu {
+    display: inline-block;
+    vertical-align: middle; }
+    header .main-menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      header .main-menu ul li {
+        margin: 0 10px; }
+        header .main-menu ul li a {
+          font-family: 'Cabin Condensed', sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #393939;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+          text-transform: uppercase; }
+        header .main-menu ul li.current_page_item a, header .main-menu ul li:hover a {
+          color: #4a9ff0; }
+  header .icons {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px; }
+    header .icons .icon {
+      width: 40px;
+      height: 40px;
+      background: #005db7;
+      border-radius: 100%;
+      position: relative;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      cursor: pointer; }
+      header .icons .icon:hover {
+        background: #4A9FF0; }
+      header .icons .icon .inner {
+        font-family: 'Cabin Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+
+/* --------------------- /header ---------------------- */
+/* ---------------------- Section slider-top ---------------------- */
+section.slider-top {
+  position: relative;
+  overflow: visible; }
+  section.slider-top .decor {
+    position: absolute;
+    right: 0;
+    bottom: -300px;
+    z-index: 2; }
+  section.slider-top .section-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 1; }
+    section.slider-top .section-inner .container {
+      width: 50%;
+      margin-right: 0;
+      margin-left: auto; }
+    section.slider-top .section-inner .title {
+      font-family: 'Cabin Condensed', sans-serif;
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 50px;
+      color: #005db7;
+      text-transform: uppercase; }
+    section.slider-top .section-inner .text {
+      font-family: 'Cabin Condensed', sans-serif;
+      font-weight: 400;
+      font-size: 28px;
+      color: #393939; }
+    section.slider-top .section-inner .button {
+      display: inline-block;
+      font-family: 'Cabin Condensed', sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      color: #005db7;
+      background: #86bef5;
+      padding: 17px 35px;
+      border-radius: 50px;
+      margin-top: 20px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+      section.slider-top .section-inner .button:hover {
+        background: #005db7;
+        color: #fff; }
+
+/* --------------------- /Section slider-top ---------------------- */
