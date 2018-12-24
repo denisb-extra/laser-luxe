@@ -21,6 +21,9 @@ var del = require('del');
 
 var runSequence = require('run-sequence');
 
+var watch = require('gulp-watch');
+
+
 
 
 gulp.task('browserSync', function() {
@@ -42,9 +45,9 @@ gulp.task('sass', function(){
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']); 
-  gulp.watch('app/*.html', browserSync.reload); 
-  gulp.watch('app/js/**/*.js', browserSync.reload); 
+  gulp.watch('app/scss/**/*.scss', ['sass']);
+  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
 
