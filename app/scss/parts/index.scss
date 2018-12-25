@@ -134,10 +134,6 @@ header {
 			top: 13px;
 			transform: rotate(-45deg);
 		}
-		div {
-			//background-color: #fff !important
-		}
-
 	}
 }
 /* --------------- /Toggle button ---------------- */
@@ -241,9 +237,6 @@ header {
 			img{
 				width:200px;
 			}
-		}
-		.toggle-button{
-
 		}
 	 .mobile{
 		display:block;
@@ -1052,9 +1045,6 @@ section.technology{
 				display: block;
 				margin: 0 auto;
 				text-align: center;
-				.button{
-
-				}
 				.lab-img{
 					padding:0 10px 25px 10px;
 					@media screen and(max-width:500px){
@@ -1065,17 +1055,11 @@ section.technology{
 						height:auto;
 					}
 				}
-				h2{
-
-				}
 				p{
 					padding:25px;
 					@media screen and(max-width:500px){
 						padding: 15px;
 					}
-				}
-				.lab-credit-img{
-
 				}
 				.laser-product{
 					top: 76.7%;

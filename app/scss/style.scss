@@ -129,6 +129,7 @@ a:visited{
 	}
 }
 
-@import 'index.scss';
-@import 'inner.scss';
+@import './parts/index.scss';
+@import './parts/inner.scss';
+@import './parts/about.scss';
 
