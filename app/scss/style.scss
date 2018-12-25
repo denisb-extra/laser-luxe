@@ -120,6 +120,15 @@ section {
 a:visited{
 	color:#333333;
 }
+.sticky{
+	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
+}
+@media screen and(max-width:500px){
+	.mobile{
+		display:none;
+	}
+}
 
 @import 'index.scss';
 @import 'inner.scss';
+

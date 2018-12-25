@@ -21,7 +21,7 @@
 </head>
 <body>
                           
-	<header>
+	<header id="header">
 		<div class="section-inner">
 			<a href class="cont-logo">
 				<img src="images/index/logo.png" alt="Logo">
@@ -33,7 +33,7 @@
 						<li class="current_page_item">
 							<a href="#">HOME</a>
 						</li>
-						<li><a href="">About</a></li>
+						<li><a href="">ABOUT</a></li>
 						<li><a href="">SERVICES</a></li>
 						<li><a href="">TECHNOLOGY</a></li>
 						<li><a href="">CERTIFICATION</a></li>
@@ -44,11 +44,11 @@
 				<div class="mobile-menu-cont">
 						<ul class="mobile-menu">
 							<li><a href="">Home</a></li>
-							<li><a href="">Products</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="">B2B</a></li>
-							<li><a href="">Process</a></li>
-							<li><a href="">news & events</a></li>
+							<li><a href="">ABOUT</a></li>
+							<li><a href="">SERVICES</a></li>
+							<li><a href="">TECHNOLOGY</a></li>
+							<li><a href="">CERTIFICATION</a></li>
+							<li><a href="">CONTACT</a></li>
 						</ul>
 					</div>
 					<div class="icons">
@@ -141,7 +141,7 @@
 				</div>
 				<div class="lab-text">
 					<h2>LASER TECHNOLOGY</h2>
-					<p>Is an acronym for “Light Amplification by the Stimulated Emission of Radiation” which produces a sharp, focused light beam that melts a very small area of metal. The benefit of this technology is that very little heat is generated at the weld point, allowing users to easily weld microns away from the most complicated and intricate component parts without damaging heat sensitive materials.<br><br><br>
+					<p>Is an acronym for “Light Amplification by the Stimulated Emission of Radiation” which produces a sharp, focused light beam that melts a very small area of metal. The benefit of this technology is that very little heat is generated at the weld point, allowing users to easily weld microns away from the most complicated and intricate component parts without damaging heat sensitive materials.<br><br class="mobile"><br>
 
 							Micro laser welding is used for joining high value, miniature components in a range of industries such as electronics, telecom, automotive, the medical industry and more. Typical applications include catheters or implants, orthodontic brackets, fiber optic couplings to laser diodes, hermetic seals, watch part components and other photonic fabrication devices.
 							</p>
@@ -203,20 +203,48 @@
 					</div>
 				</div>
 				<div class="location">
-						<h4>LOCATION</h4>
-
-					INSERT MAP
+					<h4>LOCATION:</h4>
+					<div id="map"></div>
+					<!-- <iframe src="https://snazzymaps.com/embed/122377" width="444px" height="190px" style="border:none;"></iframe> -->
 				</div>
 			</div>
 			<div class="footer">
 				<div class="footer-inner">
-						<span>All rights reserved to LaserLux Ltd. 2017</span>
+						<span class="footer-text">All rights reserved to LaserLux Ltd. 2017</span>
 						<a href="https://www.extra.co.il/"><img src="./images/credits.png" alt="Credits to Extra.co.il"></a>
 				</div>
 			</div>
 		</footer>
 
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUYDCkBcPD2PrZ7qZXJtHpIf5G52Eqkk"></script>
 
+		<script type="text/javascript">
+			google.maps.event.addDomListener(window, 'load', init);
+			var styleDark = [{"elementType":"geometry","stylers":[{"color":"#f5f5f5"}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"elementType":"labels.text.stroke","stylers":[{"color":"#f5f5f5"}]},{"featureType":"administrative.land_parcel","elementType":"labels.text.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"poi.park","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"road","elementType":"geometry","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#757575"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#dadada"}]},{"featureType":"road.highway","elementType":"labels.text.fill","stylers":[{"color":"#616161"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"color":"#e5e5e5"}]},{"featureType":"transit.station","elementType":"geometry","stylers":[{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#c9c9c9"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#9e9e9e"}]}];
+
+			function init() {
+				var mapOptions = {
+					zoom: 16,
+					center: new google.maps.LatLng(32.014472,34.80864),
+					styles: styleDark,
+					zoomControl: false,
+					mapTypeControl: false,
+					scaleControl: false,
+					streetViewControl: false,
+					rotateControl: false,
+					fullscreenControl: false
+				};
+
+				var mapElement = document.getElementById('map');
+				var map = new google.maps.Map(mapElement, mapOptions);
+				var iconBase = "images/icons/marker.png";
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(32.014472,34.80864),
+					map: map,
+					icon: iconBase
+				});
+			}
+		</script>
 	<script>
 		$(document).ready(function ($) {
 			$('.slider-top .slider').addClass("owl-carousel");
@@ -230,6 +258,17 @@
 				autoplay: true,
 				autoplayHoverPause: false,
 			});
+			window.onscroll = function () {onScroll()};//when user scrolls execute myFunction
+			var header = document.getElementById('header');//get header
+			var sticky = header.offsetTop;//get oof set position of header
+
+			function onScroll(){
+				if(window.pageYOffset >sticky ){
+					header.classList.add("sticky");
+				}else{
+					header.classList.remove('sticky');
+				}
+			}
 		});
 	</script>
 </body>
