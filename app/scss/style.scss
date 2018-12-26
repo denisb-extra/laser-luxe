@@ -66,6 +66,16 @@ $small-w: 500px;
 	font-family: 'Cabin Condensed', sans-serif;
 	font-weight: 700;
 }
+$font-big-h: 56px;
+$font-medium-h: 48px;
+$font-small-h:36px;
+$font-smallest-h:28px;
+
+$font-big-p: 20px;
+$font-medium-p: 18px;
+$font-small-p: 16px;
+$font-smallest-p: 14px;
+
 
 
 /* /Fonts */
@@ -123,13 +133,24 @@ a:visited{
 .sticky{
 	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
 }
-@media screen and(max-width:500px){
+.mobile{
+	display: none;
+}
+@media screen and(max-width:1000px){
 	.mobile{
-		display:none;
+		display:block;
+	}
+	.desktop{
+		display: none;
 	}
 }
 
+
+@import './parts/header.scss';
 @import './parts/index.scss';
+@import './parts/footer.scss';
 @import './parts/inner.scss';
 @import './parts/about.scss';
+@import './parts/technology.scss';
+@import './parts/animation.scss';
 

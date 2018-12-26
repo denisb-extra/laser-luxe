@@ -1,15 +1,32 @@
 section.top{
+    padding-top: 50px;
     .container{
+        height:100%;
         .items{
-            .title{
-                font-size: 56px;
+            position: relative;
+            display:inline-block;
+            .title-about{
+                font-size: $font-big-h;
                 color: white;
                 display: inline;
                 margin: 0 auto;
-                top: 12.5%;
+                top: 50%;
                 position: absolute;
                 left: 50%;
                 transform: translate(-50%,-50%);
+                @media screen and(max-width:1200px){
+                    font-size:$font-medium-h;
+                }
+                @media screen and(max-width:800px){
+                    font-size:$font-small-h;
+                }
+                @media screen and(max-width:600px){
+                    font-size:$font-smallest-h;
+                }
+            }
+            .about-head-pic{
+                max-width:100%;
+                height:auto;
             }
         }
     }
@@ -19,7 +36,7 @@ section.top{
     width:100%;
     text-align:center;
     h2{
-        font-size: 56px;
+        font-size: $font-big-h;
         color:white;
     }
 }
@@ -36,13 +53,16 @@ section.top{
             text-align:center;
             padding:80px 10px 0 10px;
             margin-bottom:30px;
-
+           
         }
-        p{
+        p.section-about-p{
             font-size:18px;
             padding:0 10px 0 10px;
             text-align: center;
             margin-bottom:130px;
+            @media screen and(max-width:800px){
+                font-size:16px;
+            }
         }
         div.item{
             position: absolute;
@@ -50,6 +70,10 @@ section.top{
             height: auto;
             top: 6%;
             left: 0;
+            z-index:-1;
+            opacity: 0;
+            // animation: 2s ease-in  slideInFromLeft;
+            animation: 5s ease-in 0.1s 1 slideInFromLeft forwards;
             img{
                 width:75%;
             }
@@ -177,22 +201,45 @@ section.top{
     }
 }
 section.technology-pic-about{
-    background:url("../../images/about/technology-pic.png")no-repeat center 100%;
+    background:url("../images/about/technology-pic.png")no-repeat center 100%;
     height: 403px;
     text-align: center;
     z-index: 1000;
+    max-width: 100%;
+    height:auto;
         h2{
             color: #fff;
-            font-size: 56px;
-            padding-top: 16px;
+            font-size: $font-big-h;
             font-weight: 400;
-            margin-top: 55px;
             padding-top: 20px;
-            margin-bottom: 50px;
+            margin: 55px 0 50px 0;
+            @media screen and(max-width:1200px){
+                font-size:$font-medium-h;
+                padding-top: 16px;
+                margin: 35px 0 35px 0;
+            }
+            @media screen and(max-width:800px){
+                font-size:$font-small-h;
+                padding-top: 12px;
+                margin: 30px 0 30px 0;
+            }
+            @media screen and(max-width:600px){
+                font-size:$font-smallest-h;
+                padding-top: 8px;
+                margin: 25px 0 25px 0;
+            }
         }
         p{
             color:#ffffff;
-            font-size:18px;
+            font-size:$font-medium-p;
+            padding:0 5%;
+            margin-bottom: 70px;
+            @media screen and(max-width:1200px){
+                font-size:$font-small-p;
+            }
+            @media screen and(max-width:800px){
+                font-size:$font-smallest-p;
+            }
         }
     @media screen and(max-width:600px){
         div{

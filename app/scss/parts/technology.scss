@@ -1,0 +1,384 @@
+section.top{
+    padding-top: 50px;
+    margin-bottom: 100px;
+    @media screen and(max-width:1000px){
+        margin-bottom: 0;
+    }
+    .container{
+        height:100%;
+        .items{
+            position: relative;
+            display:inline-block;
+            .title-technology{
+                font-size: $font-big-h;
+                color: white;
+                display: inline;
+                margin: 0 auto;
+                top: 50%;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                @media screen and(max-width:1200px){
+                    font-size:$font-medium-h;
+                }
+                @media screen and(max-width:800px){
+                    font-size:$font-small-h;
+                }
+                @media screen and(max-width:600px){
+                    font-size:$font-smallest-h;
+                }
+            }
+            .technology-head-pic{
+                max-width:100%;
+                height:auto;
+            }
+        }
+    }
+}
+
+section.section-about{
+    .section-inner{
+        div.laser-content{
+            div.laser{
+                font-size:18px;
+                @media screen and(max-width:1200px){
+                    font-size:$font-small-p;
+                }
+                @media screen and(max-width:800px){
+                    font-size:$font-smallest-p;
+                }
+                h2{
+                    display: inline;
+                    font-size:$font-big-h;
+                    color:#005DB7;
+                    @media screen and(max-width:1200px){
+                        font-size:$font-medium-h;
+                    }
+                    @media screen and(max-width:800px){
+                        font-size:$font-small-h;
+                    }
+                    @media screen and(max-width:600px){
+                        font-size:$font-smallest-h;
+                    }
+                    @media screen and(max-width:450px){
+                        font-size:($font-smallest-h)*0.9;
+                    }
+                    @media screen and(max-width:400px){
+                        font-size:($font-smallest-h)*0.7;
+                    }
+                }
+                img{
+                    float:right;
+                    padding-top:1.2%;
+                    padding-left:4%;
+                    max-width: 100%;
+                    height:auto;
+                    @media screen and(max-width:1250px){
+                        width:45%;
+                    }
+                    @media screen and(max-width:800px){
+                        // height:80%;
+                    }
+                }
+                .lab-credit-img{
+                    padding:40px 0 30px 0;
+                    float:left;
+                }
+            }
+        }
+    }
+}
+
+
+section.service-strip{
+    margin-bottom: 5%;
+    .take-a-look{
+        padding-left:15.3%;
+    }
+    .service-container{
+        display:flex;
+        width:100%;
+        .strip-item:nth-child(odd){background: #005db7};
+        .strip-item:nth-child(even){background:#4a9ff0};
+        .strip-item{
+            width: (100%/6);
+            height:200px;
+            transition: 0.5s;
+            @media screen and (max-width:1000px){
+                height:170px;
+            }
+            @media screen and (max-width:800px){
+                height:130px;
+            }
+            @media screen and (max-width:600px){
+                height:120px;
+            }
+            @media screen and (max-width:450px){
+                height:100px;
+            }
+            img{
+                display:block;
+                margin: 0 auto;
+                padding-top:5%;
+                padding-bottom: 14%;
+            }
+            span{
+                display:block;
+                text-align: center;
+                margin: 0 auto;
+                color: white;
+                padding-top: 5%;
+                @media screen and(max-width:1400px){
+                  font-size: $font-medium-p;
+                }
+                @media screen and(max-width:1000px){
+                    font-size: $font-small-p;
+                }
+                @media screen and(max-width:850px){
+                    font-size: $font-smallest-p;
+                }
+                @media screen and(max-width:600px){
+                    font-size: 12px;
+                }
+            }
+            &:hover{
+                background: #f5f5f5;
+                span{
+                    color:black;
+                }
+            }
+        }
+        .strip-item .background{
+            width: 90px;
+            height: 120px;
+            margin: auto auto;
+        }
+        .quality-assurance{
+            div.background{
+                background:url('../../images/technology/Quality_assurance.png') no-repeat 100%;
+            }
+            &:hover{
+                div.background{
+                     background:url('../../images/technology/Quality_assurance_hover.png') no-repeat 100%;
+                }
+            }
+            @media screen and (max-width:1000px){
+                div.background{
+                    background-size: 75%;
+                    transform: translateX(-10%);
+                    margin-bottom: 0;
+                }
+                &:hover{
+                    background-size: 75%;
+                }
+            }
+            @media screen and (max-width:800px){
+                div.background{
+                    background-size: 65%;
+                    margin-top: -12% ;
+                    margin-bottom: -20% ;
+                    transform: translateX(-19%);
+                }
+            }
+            @media screen and (max-width:600px){
+                div.background{
+                    background-size: 50%;
+                    transform: translateX(-26%);
+                    margin-top: -23%;
+                    margin-bottom: -29%;
+                }
+            }
+            @media screen and (max-width:500px){
+                div.background{
+                    background-size: 45%;
+                    -webkit-transform: translateX(-26%);
+                    transform: translateX(-44%);
+                    margin-top: -50%;
+                    margin-bottom: -55%;
+                }
+            }
+        }
+    }
+        .clean-room{
+            div.background{
+                background:url('../../images/technology/Clean_Room.png') no-repeat 100%;
+            }
+            &:hover{
+                div.background{
+                    background:url('../../images/technology/Clean_Room_hover.png') no-repeat 100%;
+                }
+            }
+            @media screen and (max-width:1000px){
+                div.background{
+                    background-size: 75%;
+                    transform: translateX(-10%);
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and (max-width:800px){
+                div.background{
+                    background-size: 65%;
+                    margin-top: -11% !important;
+                    margin-bottom: -20% !important;
+                    -webkit-transform: translateX(-19%);
+                    transform: translateX(-16%);
+                }
+            }
+            @media screen and (max-width:600px){
+                div.background{
+                    background-size: 50%;
+                    transform: translateX(-26%);
+                    margin-top: -23% !important;
+                    margin-bottom: -29% !important;
+                }
+            }
+            @media screen and (max-width:500px){
+                div.background{
+                    background-size: 45%;
+                    transform: translateX(-26%);
+                    margin-top: -23% !important;
+                    margin-bottom: -29% !important;
+                }
+            }
+        }
+        .laser-welding{
+            div.background{
+                background:url('../../images/technology/Laser_welding.png') no-repeat 100%;
+            }
+            &:hover{
+                div.background{
+                    background:url('../../images/technology/Laser_welding_hover.png') no-repeat 100%;
+                }
+            }
+            @media screen and (max-width:1000px){
+                div.background{
+                    background-size: 75%;
+                    transform: translateX(-3%);
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and (max-width:800px){
+                div.background{
+                    background-size: 65%;
+                    margin-top: -11% !important;
+                    margin-bottom: -20% !important;
+                    -webkit-transform: translateX(-19%);
+                    transform: translateX(-19%);
+                }
+            }
+            @media screen and (max-width:600px){
+                div.background{
+                    background-size: 50%;
+                    transform: translateX(-26%);
+                    margin-top: -23% !important;
+                    margin-bottom: -29% !important;
+                }
+
+            }
+        }
+        .enineering{
+            div.background{
+                background:url('../../images/technology/Engineering.png') no-repeat 100%;
+            }
+            &:hover{
+                div.background{
+                    background:url('../../images/technology/Engineering_hover.png') no-repeat 100%;
+                }
+            }
+            @media screen and (max-width:1000px){
+                div.background{
+                    background-size: 75%;
+                    transform: translateX(-10%);
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and (max-width:800px){
+                div.background{
+                    background-size: 65%;
+                    margin-top: -11% !important;
+                    margin-bottom: -20% !important;
+                    -webkit-transform: translateX(-19%);
+                    transform: translateX(-19%);
+                }
+            }
+            @media screen and (max-width:600px){
+                div.background{
+                    background-size: 50%;
+                    transform: translateX(-26%);
+                    margin-top: -23% !important;
+                    margin-bottom: -29% !important;
+                }
+
+            }
+        }
+        .turnkey-projects{
+            div.background{
+                background:url('../../images/technology/Turnkey_Projects.png') no-repeat 100%;
+            }
+            &:hover{
+                div.background{
+                    background:url('../../images/technology/Turnkey_Projects_hover.png') no-repeat 100%;
+                }
+            }
+            @media screen and (max-width:1000px){
+                div.background{
+                    background-size: 75%;
+                    transform: translateX(-10%);
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and (max-width:800px){
+                div.background{
+                    background-size: 65%;
+                    margin-top: -11% !important;
+                    margin-bottom: -20% !important;
+                    -webkit-transform: translateX(-19%);
+                    transform: translateX(-19%);
+                }
+            }
+            @media screen and (max-width:600px){
+                div.background{
+                    background-size: 50%;
+                    transform: translateX(-26%);
+                    margin-top: -23% !important;
+                    margin-bottom: -29% !important;
+                }
+
+            }
+        }
+        .development{
+            div.background{
+                background:url('../../images/technology/Development.png') no-repeat 100%;
+            }
+            &:hover{
+                div.background{
+                    background:url('../../images/technology/Development_hover.png') no-repeat 100%;
+                }
+            }
+            @media screen and (max-width:1000px){
+                div.background{
+                    background-size: 75%;
+                    transform: translateX(-10%);
+                    margin-bottom: 0;
+                }
+            }
+            @media screen and (max-width:800px){
+                div.background{
+                    background-size: 65%;
+                    margin-top: -11% !important;
+                    margin-bottom: -20% !important;
+                    -webkit-transform: translateX(-19%);
+                    transform: translateX(-19%);
+                }
+            }
+            @media screen and (max-width:600px){
+                div.background{
+                    background-size: 50%;
+                    transform: translateX(-26%);
+                    margin-top: -23% !important;
+                    margin-bottom: -29% !important;
+                }
+
+            }
+        }
+    }
