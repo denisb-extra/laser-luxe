@@ -104,23 +104,11 @@ section.service-strip{
             width: (100%/6);
             height:200px;
             transition: 0.5s;
-            @media screen and (max-width:1000px){
-                height:170px;
-            }
-            @media screen and (max-width:800px){
-                height:130px;
-            }
-            @media screen and (max-width:600px){
-                height:120px;
-            }
-            @media screen and (max-width:450px){
-                height:100px;
-            }
-            img{
-                display:block;
-                margin: 0 auto;
-                padding-top:5%;
-                padding-bottom: 14%;
+            div.background{
+                margin-top: 4%;
+                @media screen and(max-width:1200px){
+                    margin-top: 6%;
+                  }
             }
             span{
                 display:block;
@@ -138,7 +126,7 @@ section.service-strip{
                     font-size: $font-smallest-p;
                 }
                 @media screen and(max-width:600px){
-                    font-size: 12px;
+                    padding-top: 8%;
                 }
             }
             &:hover{
@@ -162,41 +150,25 @@ section.service-strip{
                      background:url('../../images/technology/Quality_assurance_hover.png') no-repeat 100%;
                 }
             }
-            @media screen and (max-width:1000px){
-                div.background{
-                    background-size: 75%;
-                    transform: translateX(-10%);
-                    margin-bottom: 0;
-                }
-                &:hover{
-                    background-size: 75%;
-                }
+
+        }
+        @media screen and(max-width:1000px){
+            flex-flow:row wrap;
+            .strip-item{
+                width: (100%/3);
             }
-            @media screen and (max-width:800px){
-                div.background{
-                    background-size: 65%;
-                    margin-top: -12% ;
-                    margin-bottom: -20% ;
-                    transform: translateX(-19%);
-                }
+        }
+        @media screen and(max-width:600px){
+            flex-flow:row wrap;
+            .strip-item{
+                width: (100%/2);
             }
-            @media screen and (max-width:600px){
-                div.background{
-                    background-size: 50%;
-                    transform: translateX(-26%);
-                    margin-top: -23%;
-                    margin-bottom: -29%;
-                }
-            }
-            @media screen and (max-width:500px){
-                div.background{
-                    background-size: 45%;
-                    -webkit-transform: translateX(-26%);
-                    transform: translateX(-44%);
-                    margin-top: -50%;
-                    margin-bottom: -55%;
-                }
-            }
+            .strip-item:nth-child(1){background: #4a9ff0};
+            .strip-item:nth-child(2){background: #005db7};
+            .strip-item:nth-child(3){background: #005db7};
+            .strip-item:nth-child(4){background: #4a9ff0};
+            .strip-item:nth-child(5){background: #4a9ff0};
+            .strip-item:nth-child(6){background: #005db7};
         }
     }
         .clean-room{
@@ -206,38 +178,6 @@ section.service-strip{
             &:hover{
                 div.background{
                     background:url('../../images/technology/Clean_Room_hover.png') no-repeat 100%;
-                }
-            }
-            @media screen and (max-width:1000px){
-                div.background{
-                    background-size: 75%;
-                    transform: translateX(-10%);
-                    margin-bottom: 0;
-                }
-            }
-            @media screen and (max-width:800px){
-                div.background{
-                    background-size: 65%;
-                    margin-top: -11% !important;
-                    margin-bottom: -20% !important;
-                    -webkit-transform: translateX(-19%);
-                    transform: translateX(-16%);
-                }
-            }
-            @media screen and (max-width:600px){
-                div.background{
-                    background-size: 50%;
-                    transform: translateX(-26%);
-                    margin-top: -23% !important;
-                    margin-bottom: -29% !important;
-                }
-            }
-            @media screen and (max-width:500px){
-                div.background{
-                    background-size: 45%;
-                    transform: translateX(-26%);
-                    margin-top: -23% !important;
-                    margin-bottom: -29% !important;
                 }
             }
         }
@@ -250,31 +190,6 @@ section.service-strip{
                     background:url('../../images/technology/Laser_welding_hover.png') no-repeat 100%;
                 }
             }
-            @media screen and (max-width:1000px){
-                div.background{
-                    background-size: 75%;
-                    transform: translateX(-3%);
-                    margin-bottom: 0;
-                }
-            }
-            @media screen and (max-width:800px){
-                div.background{
-                    background-size: 65%;
-                    margin-top: -11% !important;
-                    margin-bottom: -20% !important;
-                    -webkit-transform: translateX(-19%);
-                    transform: translateX(-19%);
-                }
-            }
-            @media screen and (max-width:600px){
-                div.background{
-                    background-size: 50%;
-                    transform: translateX(-26%);
-                    margin-top: -23% !important;
-                    margin-bottom: -29% !important;
-                }
-
-            }
         }
         .enineering{
             div.background{
@@ -284,31 +199,6 @@ section.service-strip{
                 div.background{
                     background:url('../../images/technology/Engineering_hover.png') no-repeat 100%;
                 }
-            }
-            @media screen and (max-width:1000px){
-                div.background{
-                    background-size: 75%;
-                    transform: translateX(-10%);
-                    margin-bottom: 0;
-                }
-            }
-            @media screen and (max-width:800px){
-                div.background{
-                    background-size: 65%;
-                    margin-top: -11% !important;
-                    margin-bottom: -20% !important;
-                    -webkit-transform: translateX(-19%);
-                    transform: translateX(-19%);
-                }
-            }
-            @media screen and (max-width:600px){
-                div.background{
-                    background-size: 50%;
-                    transform: translateX(-26%);
-                    margin-top: -23% !important;
-                    margin-bottom: -29% !important;
-                }
-
             }
         }
         .turnkey-projects{
@@ -320,31 +210,6 @@ section.service-strip{
                     background:url('../../images/technology/Turnkey_Projects_hover.png') no-repeat 100%;
                 }
             }
-            @media screen and (max-width:1000px){
-                div.background{
-                    background-size: 75%;
-                    transform: translateX(-10%);
-                    margin-bottom: 0;
-                }
-            }
-            @media screen and (max-width:800px){
-                div.background{
-                    background-size: 65%;
-                    margin-top: -11% !important;
-                    margin-bottom: -20% !important;
-                    -webkit-transform: translateX(-19%);
-                    transform: translateX(-19%);
-                }
-            }
-            @media screen and (max-width:600px){
-                div.background{
-                    background-size: 50%;
-                    transform: translateX(-26%);
-                    margin-top: -23% !important;
-                    margin-bottom: -29% !important;
-                }
-
-            }
         }
         .development{
             div.background{
@@ -354,31 +219,6 @@ section.service-strip{
                 div.background{
                     background:url('../../images/technology/Development_hover.png') no-repeat 100%;
                 }
-            }
-            @media screen and (max-width:1000px){
-                div.background{
-                    background-size: 75%;
-                    transform: translateX(-10%);
-                    margin-bottom: 0;
-                }
-            }
-            @media screen and (max-width:800px){
-                div.background{
-                    background-size: 65%;
-                    margin-top: -11% !important;
-                    margin-bottom: -20% !important;
-                    -webkit-transform: translateX(-19%);
-                    transform: translateX(-19%);
-                }
-            }
-            @media screen and (max-width:600px){
-                div.background{
-                    background-size: 50%;
-                    transform: translateX(-26%);
-                    margin-top: -23% !important;
-                    margin-bottom: -29% !important;
-                }
-
             }
         }
     }

@@ -126,10 +126,13 @@ section {
 	padding: 0 10px;
 	width: 100%;
 }
-
+a{
+	color:#333333
+}
 a:visited{
 	color:#333333;
 }
+
 .sticky{
 	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.25);
 }
@@ -149,8 +152,12 @@ a:visited{
 @import './parts/header.scss';
 @import './parts/index.scss';
 @import './parts/footer.scss';
-@import './parts/inner.scss';
 @import './parts/about.scss';
+@import './parts/services.scss';
+@import './parts/service.scss';
 @import './parts/technology.scss';
+@import './parts/certification.scss';
+@import './parts/contact.scss';
 @import './parts/animation.scss';
 
+@import './parts/inner.scss';

@@ -16,7 +16,7 @@ section.slider-top {
 		top: 60%;
 		z-index: 2;
 		width:30%;
-		opcaity:0;
+		opacity:0;
 		animation: 3s ease-in 0.1s 1 slideInFromRight forwards;
 		img{
 			width: 100%;
@@ -84,7 +84,7 @@ section.slider-top {
 			}
 		}
 		.decor {
-			top: 70%;
+			top: 95%;
 		}
 		.section-inner {
 			position: absolute;
@@ -104,6 +104,11 @@ section.slider-top {
 			.text{
 				color:lightgrey;
 			}
+		}
+	}
+	@media screen and (max-width:800px){
+		.decor {
+			top: 117%;
 		}
 	}
 	@media screen and (max-width:1100px){

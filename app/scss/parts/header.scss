@@ -54,7 +54,22 @@ header {
 						color: #4a9ff0;
 					}
 				}
+				.dropdown-menu{
+					background: #fafafa;
+					display: none;
+					&:hover{
+						display:block;
+					}
+				}
 			};
+			li.subed-menu{
+				&:hover{
+					ul{
+						display:block;
+						position: absolute;
+					}
+				}
+			}
 		}
 	}
 

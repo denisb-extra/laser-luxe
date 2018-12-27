@@ -42,6 +42,9 @@ section {
   padding: 0 10px;
   width: 100%; }
 
+a {
+  color: #333333; }
+
 a:visited {
   color: #333333; }
 
@@ -104,6 +107,14 @@ header {
           text-transform: uppercase; }
         header .main-menu ul li.current_page_item a, header .main-menu ul li:hover a {
           color: #4a9ff0; }
+        header .main-menu ul li .dropdown-menu {
+          background: #fafafa;
+          display: none; }
+          header .main-menu ul li .dropdown-menu:hover {
+            display: block; }
+      header .main-menu ul li.subed-menu:hover ul {
+        display: block;
+        position: absolute; }
   header .icons {
     display: inline-block;
     vertical-align: middle;
@@ -279,7 +290,7 @@ section.slider-top {
     top: 60%;
     z-index: 2;
     width: 30%;
-    opcaity: 0;
+    opacity: 0;
     -webkit-animation: 3s ease-in 0.1s 1 slideInFromRight forwards;
             animation: 3s ease-in 0.1s 1 slideInFromRight forwards; }
     section.slider-top .decor img {
@@ -343,7 +354,7 @@ section.slider-top {
       height: 100%;
       background: rgba(0, 0, 0, 0.4); }
     section.slider-top .decor {
-      top: 70%; }
+      top: 95%; }
     section.slider-top .section-inner {
       position: absolute;
       top: 50%;
@@ -360,6 +371,9 @@ section.slider-top {
         color: #fafafa; }
       section.slider-top .section-inner .text {
         color: lightgrey; } }
+  @media screen and (max-width: 800px) {
+    section.slider-top .decor {
+      top: 117%; } }
   @media screen and (max-width: 1100px) {
     section.slider-top {
       margin-bottom: 0; }
@@ -1159,6 +1173,9 @@ section.top {
         max-width: 100%;
         height: auto; }
 
+section#about-top {
+  margin-bottom: 0; }
+
 .container-about {
   width: 100%;
   text-align: center; }
@@ -1321,6 +1338,368 @@ section.technology-pic-about {
         font-size: 16px;
         padding: 0 5px; } }
 
+section#services-top {
+  margin-bottom: 10px; }
+
+section.section-about div.section-inner div.laser-content div.about-services h3 {
+  text-align: left;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 1%; }
+
+section.section-about div.section-inner div.laser-content div.about-services p {
+  margin-bottom: 3%; }
+
+section.services-section div.decor-item {
+  position: absolute;
+  top: 37.5%;
+  right: 0;
+  width: 27%;
+  z-index: -1;
+  -webkit-animation: 2.5s ease-in 0.1s 1 slideInFromRight forwards;
+          animation: 2.5s ease-in 0.1s 1 slideInFromRight forwards;
+  overflow: hidden; }
+  section.services-section div.decor-item img {
+    max-width: 100%;
+    height: auto; }
+
+section.services-section .section-inner {
+  margin: 0 auto; }
+  section.services-section .section-inner .services-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 7%; }
+    @media screen and (max-width: 1250px) {
+      section.services-section .section-inner .services-container {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    section.services-section .section-inner .services-container .strip-item {
+      width: 390px;
+      height: 220px;
+      display: block;
+      text-align: center;
+      background: #f5f5f5;
+      margin: 0 0 20px 0; }
+      @media screen and (max-width: 1250px) {
+        section.services-section .section-inner .services-container .strip-item {
+          width: 350px;
+          height: 197x;
+          margin: 0 10px 10px 0; } }
+      @media screen and (max-width: 800px) {
+        section.services-section .section-inner .services-container .strip-item {
+          width: 300px;
+          height: 168px;
+          margin: 0 10px 10px 0; } }
+      @media screen and (max-width: 650px) {
+        section.services-section .section-inner .services-container .strip-item {
+          width: 250px;
+          height: 140px;
+          margin: 0 10px 10px 0; } }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .strip-item {
+          width: 200px;
+          height: 112px;
+          margin: 0 10px 10px 0; } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .strip-item {
+          width: 150px;
+          height: 84px;
+          margin: 0 10px 10px 0; } }
+    section.services-section .section-inner .services-container .strip-item .background {
+      width: 90px;
+      height: 120px;
+      margin: 5% auto 2% auto; }
+      @media screen and (max-width: 1250px) {
+        section.services-section .section-inner .services-container .strip-item .background {
+          margin: 7% auto 2% auto; } }
+      @media screen and (max-width: 800px) {
+        section.services-section .section-inner .services-container .strip-item .background {
+          margin: 0% auto 2% auto; } }
+      @media screen and (max-width: 650px) {
+        section.services-section .section-inner .services-container .strip-item .background {
+          margin: -3% auto -2% auto; } }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .strip-item .background {
+          margin: -10% auto -12% auto; } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .strip-item .background {
+          margin: -20% auto -25% auto; } }
+    section.services-section .section-inner .services-container .strip-item span {
+      position: relative;
+      color: #1a598a; }
+      @media screen and (max-width: 650px) {
+        section.services-section .section-inner .services-container .strip-item span {
+          font-size: 18px; } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .strip-item span {
+          font-size: 16px; } }
+    section.services-section .section-inner .services-container .quality-assurance div.background {
+      background: url("../../images/technology/Quality_assurance_hover.png") no-repeat 100%; }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .quality-assurance div.background {
+          background-size: 75% auto;
+          -webkit-transform: translateX(-12.5%);
+                  transform: translateX(-12.5%); } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .quality-assurance div.background {
+          background-size: 50% auto;
+          -webkit-transform: translateX(-25%);
+                  transform: translateX(-25%); } }
+    section.services-section .section-inner .services-container .quality-assurance:hover {
+      background: #4a9ff0; }
+      section.services-section .section-inner .services-container .quality-assurance:hover div.background {
+        background: url("../../images/technology/Quality_assurance.png") no-repeat 100%; }
+        @media screen and (max-width: 600px) {
+          section.services-section .section-inner .services-container .quality-assurance:hover div.background {
+            background-size: 75% auto;
+            -webkit-transform: translateX(-12.5%);
+                    transform: translateX(-12.5%); } }
+        @media screen and (max-width: 450px) {
+          section.services-section .section-inner .services-container .quality-assurance:hover div.background {
+            background-size: 50% auto;
+            -webkit-transform: translateX(-25%);
+                    transform: translateX(-25%); } }
+      section.services-section .section-inner .services-container .quality-assurance:hover span {
+        color: #fafafa; }
+    section.services-section .section-inner .services-container .clean-room div.background {
+      background: url("../../images/technology/Clean_Room_hover.png") no-repeat 100%; }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .clean-room div.background {
+          background-size: 75% auto;
+          -webkit-transform: translateX(-12.5%);
+                  transform: translateX(-12.5%); } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .clean-room div.background {
+          background-size: 50% auto;
+          -webkit-transform: translateX(-25%);
+                  transform: translateX(-25%); } }
+    section.services-section .section-inner .services-container .clean-room:hover {
+      background: #4a9ff0; }
+      section.services-section .section-inner .services-container .clean-room:hover div.background {
+        background: url("../../images/technology/Clean_Room.png") no-repeat 100%; }
+        @media screen and (max-width: 600px) {
+          section.services-section .section-inner .services-container .clean-room:hover div.background {
+            background-size: 75% auto;
+            -webkit-transform: translateX(-12.5%);
+                    transform: translateX(-12.5%); } }
+        @media screen and (max-width: 450px) {
+          section.services-section .section-inner .services-container .clean-room:hover div.background {
+            background-size: 50% auto;
+            -webkit-transform: translateX(-25%);
+                    transform: translateX(-25%); } }
+      section.services-section .section-inner .services-container .clean-room:hover span {
+        color: #fafafa; }
+    section.services-section .section-inner .services-container .laser-welding div.background {
+      background: url("../../images/technology/Laser_welding_hover.png") no-repeat 100%; }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .laser-welding div.background {
+          background-size: 75% auto;
+          -webkit-transform: translateX(-12.5%);
+                  transform: translateX(-12.5%); } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .laser-welding div.background {
+          background-size: 50% auto;
+          -webkit-transform: translateX(-25%);
+                  transform: translateX(-25%); } }
+    section.services-section .section-inner .services-container .laser-welding:hover {
+      background: #4a9ff0; }
+      section.services-section .section-inner .services-container .laser-welding:hover div.background {
+        background: url("../../images/technology/Laser_welding.png") no-repeat 100%; }
+        @media screen and (max-width: 600px) {
+          section.services-section .section-inner .services-container .laser-welding:hover div.background {
+            background-size: 75% auto;
+            -webkit-transform: translateX(-12.5%);
+                    transform: translateX(-12.5%); } }
+        @media screen and (max-width: 450px) {
+          section.services-section .section-inner .services-container .laser-welding:hover div.background {
+            background-size: 50% auto;
+            -webkit-transform: translateX(-25%);
+                    transform: translateX(-25%); } }
+      section.services-section .section-inner .services-container .laser-welding:hover span {
+        color: #fafafa; }
+    section.services-section .section-inner .services-container .enineering div.background {
+      background: url("../../images/technology/Engineering_hover.png") no-repeat 100%; }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .enineering div.background {
+          background-size: 75% auto;
+          -webkit-transform: translateX(-12.5%);
+                  transform: translateX(-12.5%); } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .enineering div.background {
+          background-size: 50% auto;
+          -webkit-transform: translateX(-25%);
+                  transform: translateX(-25%); } }
+    section.services-section .section-inner .services-container .enineering:hover {
+      background: #4a9ff0; }
+      section.services-section .section-inner .services-container .enineering:hover div.background {
+        background: url("../../images/technology/Engineering.png") no-repeat 100%; }
+        @media screen and (max-width: 600px) {
+          section.services-section .section-inner .services-container .enineering:hover div.background {
+            background-size: 75% auto;
+            -webkit-transform: translateX(-12.5%);
+                    transform: translateX(-12.5%); } }
+        @media screen and (max-width: 450px) {
+          section.services-section .section-inner .services-container .enineering:hover div.background {
+            background-size: 50% auto;
+            -webkit-transform: translateX(-25%);
+                    transform: translateX(-25%); } }
+      section.services-section .section-inner .services-container .enineering:hover span {
+        color: #fafafa; }
+    section.services-section .section-inner .services-container .turnkey-projects div.background {
+      background: url("../../images/technology/Turnkey_Projects_hover.png") no-repeat 100%; }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .turnkey-projects div.background {
+          background-size: 75% auto;
+          -webkit-transform: translateX(-12.5%);
+                  transform: translateX(-12.5%); } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .turnkey-projects div.background {
+          background-size: 50% auto;
+          -webkit-transform: translateX(-25%);
+                  transform: translateX(-25%); } }
+    section.services-section .section-inner .services-container .turnkey-projects:hover {
+      background: #4a9ff0; }
+      section.services-section .section-inner .services-container .turnkey-projects:hover div.background {
+        background: url("../../images/technology/Turnkey_Projects.png") no-repeat 100%; }
+        @media screen and (max-width: 600px) {
+          section.services-section .section-inner .services-container .turnkey-projects:hover div.background {
+            background-size: 75% auto;
+            -webkit-transform: translateX(-12.5%);
+                    transform: translateX(-12.5%); } }
+        @media screen and (max-width: 450px) {
+          section.services-section .section-inner .services-container .turnkey-projects:hover div.background {
+            background-size: 50% auto;
+            -webkit-transform: translateX(-25%);
+                    transform: translateX(-25%); } }
+      section.services-section .section-inner .services-container .turnkey-projects:hover span {
+        color: #fafafa; }
+    section.services-section .section-inner .services-container .development div.background {
+      background: url("../../images/technology/Development_hover.png") no-repeat 100%; }
+      @media screen and (max-width: 600px) {
+        section.services-section .section-inner .services-container .development div.background {
+          background-size: 75% auto;
+          -webkit-transform: translateX(-12.5%);
+                  transform: translateX(-12.5%); } }
+      @media screen and (max-width: 450px) {
+        section.services-section .section-inner .services-container .development div.background {
+          background-size: 50% auto;
+          -webkit-transform: translateX(-25%);
+                  transform: translateX(-25%); } }
+    section.services-section .section-inner .services-container .development:hover {
+      background: #4a9ff0; }
+      section.services-section .section-inner .services-container .development:hover div.background {
+        background: url("../../images/technology/Development.png") no-repeat 100%; }
+        @media screen and (max-width: 600px) {
+          section.services-section .section-inner .services-container .development:hover div.background {
+            background-size: 75% auto;
+            -webkit-transform: translateX(-12.5%);
+                    transform: translateX(-12.5%); } }
+        @media screen and (max-width: 450px) {
+          section.services-section .section-inner .services-container .development:hover div.background {
+            background-size: 50% auto;
+            -webkit-transform: translateX(-25%);
+                    transform: translateX(-25%); } }
+      section.services-section .section-inner .services-container .development:hover span {
+        color: #fafafa; }
+
+section#service-top {
+  margin-bottom: 0; }
+
+section.service-info div.section-inner {
+  margin: 0 auto;
+  margin-bottom: 5%; }
+  section.service-info div.section-inner .service-cont {
+    max-width: 100%;
+    height: auto; }
+    section.service-info div.section-inner .service-cont h2 {
+      color: #005db7;
+      font-size: 56px; }
+    section.service-info div.section-inner .service-cont p {
+      font-size: 18px;
+      margin-bottom: 5%; }
+      section.service-info div.section-inner .service-cont p span {
+        font-weight: 500; }
+    section.service-info div.section-inner .service-cont .service-gallery {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media screen and (max-width: 850px) {
+        section.service-info div.section-inner .service-cont .service-gallery {
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
+      section.service-info div.section-inner .service-cont .service-gallery .service-img {
+        height: 320px;
+        width: calc(100%/3);
+        margin-bottom: 1%; }
+        @media screen and (max-width: 1250px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 290px; } }
+        @media screen and (max-width: 1150px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 270px; } }
+        @media screen and (max-width: 1050px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 240px; } }
+        @media screen and (max-width: 950px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 210px; } }
+        @media screen and (max-width: 850px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 180px; } }
+        @media screen and (max-width: 800px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            width: calc(100%/2);
+            height: 180px; } }
+        @media screen and (max-width: 600px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 150px; } }
+        @media screen and (max-width: 450px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 130px; } }
+        @media screen and (max-width: 450px) {
+          section.service-info div.section-inner .service-cont .service-gallery .service-img {
+            height: 120px; } }
+      section.service-info div.section-inner .service-cont .service-gallery .service-img:nth-child(1) {
+        background: url("../../images/services/lab-pic-1.png") no-repeat;
+        background-size: contain;
+        background-position: center; }
+      section.service-info div.section-inner .service-cont .service-gallery .service-img:nth-child(2) {
+        background: url("../../images/services/lab-pic-2.png") no-repeat;
+        background-size: contain;
+        background-position: center; }
+      section.service-info div.section-inner .service-cont .service-gallery .service-img:nth-child(3) {
+        background: url("../../images/services/lab-pic-3.png") no-repeat;
+        background-size: contain;
+        background-position: center; }
+      section.service-info div.section-inner .service-cont .service-gallery .service-img:nth-child(4) {
+        background: url("../../images/services/lab-pic-4.png") no-repeat;
+        background-size: contain;
+        background-position: center; }
+      section.service-info div.section-inner .service-cont .service-gallery .service-img:nth-child(5) {
+        background: url("../../images/services/lab-pic-5.png") no-repeat;
+        background-size: contain;
+        background-position: center; }
+      section.service-info div.section-inner .service-cont .service-gallery .service-img:nth-child(6) {
+        background: url("../../images/services/lab-pic-6.png") no-repeat;
+        background-size: contain;
+        background-position: center; }
+
 section.top {
   padding-top: 50px;
   margin-bottom: 100px; }
@@ -1413,23 +1792,11 @@ section.service-strip {
       height: 200px;
       -webkit-transition: 0.5s;
       transition: 0.5s; }
-      @media screen and (max-width: 1000px) {
-        section.service-strip .service-container .strip-item {
-          height: 170px; } }
-      @media screen and (max-width: 800px) {
-        section.service-strip .service-container .strip-item {
-          height: 130px; } }
-      @media screen and (max-width: 600px) {
-        section.service-strip .service-container .strip-item {
-          height: 120px; } }
-      @media screen and (max-width: 450px) {
-        section.service-strip .service-container .strip-item {
-          height: 100px; } }
-      section.service-strip .service-container .strip-item img {
-        display: block;
-        margin: 0 auto;
-        padding-top: 5%;
-        padding-bottom: 14%; }
+      section.service-strip .service-container .strip-item div.background {
+        margin-top: 4%; }
+        @media screen and (max-width: 1200px) {
+          section.service-strip .service-container .strip-item div.background {
+            margin-top: 6%; } }
       section.service-strip .service-container .strip-item span {
         display: block;
         text-align: center;
@@ -1447,7 +1814,7 @@ section.service-strip {
             font-size: 14px; } }
         @media screen and (max-width: 600px) {
           section.service-strip .service-container .strip-item span {
-            font-size: 12px; } }
+            padding-top: 8%; } }
       section.service-strip .service-container .strip-item:hover {
         background: #f5f5f5; }
         section.service-strip .service-container .strip-item:hover span {
@@ -1461,161 +1828,63 @@ section.service-strip {
     section.service-strip .service-container .quality-assurance:hover div.background {
       background: url("../../images/technology/Quality_assurance_hover.png") no-repeat 100%; }
     @media screen and (max-width: 1000px) {
-      section.service-strip .service-container .quality-assurance div.background {
-        background-size: 75%;
-        -webkit-transform: translateX(-10%);
-                transform: translateX(-10%);
-        margin-bottom: 0; }
-      section.service-strip .service-container .quality-assurance:hover {
-        background-size: 75%; } }
-    @media screen and (max-width: 800px) {
-      section.service-strip .service-container .quality-assurance div.background {
-        background-size: 65%;
-        margin-top: -12%;
-        margin-bottom: -20%;
-        -webkit-transform: translateX(-19%);
-                transform: translateX(-19%); } }
+      section.service-strip .service-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+        section.service-strip .service-container .strip-item {
+          width: 33.33333%; } }
     @media screen and (max-width: 600px) {
-      section.service-strip .service-container .quality-assurance div.background {
-        background-size: 50%;
-        -webkit-transform: translateX(-26%);
-                transform: translateX(-26%);
-        margin-top: -23%;
-        margin-bottom: -29%; } }
-    @media screen and (max-width: 500px) {
-      section.service-strip .service-container .quality-assurance div.background {
-        background-size: 45%;
-        -webkit-transform: translateX(-26%);
-        transform: translateX(-44%);
-        margin-top: -50%;
-        margin-bottom: -55%; } }
+      section.service-strip .service-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap; }
+        section.service-strip .service-container .strip-item {
+          width: 50%; }
+        section.service-strip .service-container .strip-item:nth-child(1) {
+          background: #4a9ff0; }
+        section.service-strip .service-container .strip-item:nth-child(2) {
+          background: #005db7; }
+        section.service-strip .service-container .strip-item:nth-child(3) {
+          background: #005db7; }
+        section.service-strip .service-container .strip-item:nth-child(4) {
+          background: #4a9ff0; }
+        section.service-strip .service-container .strip-item:nth-child(5) {
+          background: #4a9ff0; }
+        section.service-strip .service-container .strip-item:nth-child(6) {
+          background: #005db7; } }
   section.service-strip .clean-room div.background {
     background: url("../../images/technology/Clean_Room.png") no-repeat 100%; }
   section.service-strip .clean-room:hover div.background {
     background: url("../../images/technology/Clean_Room_hover.png") no-repeat 100%; }
-  @media screen and (max-width: 1000px) {
-    section.service-strip .clean-room div.background {
-      background-size: 75%;
-      -webkit-transform: translateX(-10%);
-              transform: translateX(-10%);
-      margin-bottom: 0; } }
-  @media screen and (max-width: 800px) {
-    section.service-strip .clean-room div.background {
-      background-size: 65%;
-      margin-top: -11% !important;
-      margin-bottom: -20% !important;
-      -webkit-transform: translateX(-19%);
-      transform: translateX(-16%); } }
-  @media screen and (max-width: 600px) {
-    section.service-strip .clean-room div.background {
-      background-size: 50%;
-      -webkit-transform: translateX(-26%);
-              transform: translateX(-26%);
-      margin-top: -23% !important;
-      margin-bottom: -29% !important; } }
-  @media screen and (max-width: 500px) {
-    section.service-strip .clean-room div.background {
-      background-size: 45%;
-      -webkit-transform: translateX(-26%);
-              transform: translateX(-26%);
-      margin-top: -23% !important;
-      margin-bottom: -29% !important; } }
   section.service-strip .laser-welding div.background {
     background: url("../../images/technology/Laser_welding.png") no-repeat 100%; }
   section.service-strip .laser-welding:hover div.background {
     background: url("../../images/technology/Laser_welding_hover.png") no-repeat 100%; }
-  @media screen and (max-width: 1000px) {
-    section.service-strip .laser-welding div.background {
-      background-size: 75%;
-      -webkit-transform: translateX(-3%);
-              transform: translateX(-3%);
-      margin-bottom: 0; } }
-  @media screen and (max-width: 800px) {
-    section.service-strip .laser-welding div.background {
-      background-size: 65%;
-      margin-top: -11% !important;
-      margin-bottom: -20% !important;
-      -webkit-transform: translateX(-19%);
-      transform: translateX(-19%); } }
-  @media screen and (max-width: 600px) {
-    section.service-strip .laser-welding div.background {
-      background-size: 50%;
-      -webkit-transform: translateX(-26%);
-              transform: translateX(-26%);
-      margin-top: -23% !important;
-      margin-bottom: -29% !important; } }
   section.service-strip .enineering div.background {
     background: url("../../images/technology/Engineering.png") no-repeat 100%; }
   section.service-strip .enineering:hover div.background {
     background: url("../../images/technology/Engineering_hover.png") no-repeat 100%; }
-  @media screen and (max-width: 1000px) {
-    section.service-strip .enineering div.background {
-      background-size: 75%;
-      -webkit-transform: translateX(-10%);
-              transform: translateX(-10%);
-      margin-bottom: 0; } }
-  @media screen and (max-width: 800px) {
-    section.service-strip .enineering div.background {
-      background-size: 65%;
-      margin-top: -11% !important;
-      margin-bottom: -20% !important;
-      -webkit-transform: translateX(-19%);
-      transform: translateX(-19%); } }
-  @media screen and (max-width: 600px) {
-    section.service-strip .enineering div.background {
-      background-size: 50%;
-      -webkit-transform: translateX(-26%);
-              transform: translateX(-26%);
-      margin-top: -23% !important;
-      margin-bottom: -29% !important; } }
   section.service-strip .turnkey-projects div.background {
     background: url("../../images/technology/Turnkey_Projects.png") no-repeat 100%; }
   section.service-strip .turnkey-projects:hover div.background {
     background: url("../../images/technology/Turnkey_Projects_hover.png") no-repeat 100%; }
-  @media screen and (max-width: 1000px) {
-    section.service-strip .turnkey-projects div.background {
-      background-size: 75%;
-      -webkit-transform: translateX(-10%);
-              transform: translateX(-10%);
-      margin-bottom: 0; } }
-  @media screen and (max-width: 800px) {
-    section.service-strip .turnkey-projects div.background {
-      background-size: 65%;
-      margin-top: -11% !important;
-      margin-bottom: -20% !important;
-      -webkit-transform: translateX(-19%);
-      transform: translateX(-19%); } }
-  @media screen and (max-width: 600px) {
-    section.service-strip .turnkey-projects div.background {
-      background-size: 50%;
-      -webkit-transform: translateX(-26%);
-              transform: translateX(-26%);
-      margin-top: -23% !important;
-      margin-bottom: -29% !important; } }
   section.service-strip .development div.background {
     background: url("../../images/technology/Development.png") no-repeat 100%; }
   section.service-strip .development:hover div.background {
     background: url("../../images/technology/Development_hover.png") no-repeat 100%; }
-  @media screen and (max-width: 1000px) {
-    section.service-strip .development div.background {
-      background-size: 75%;
-      -webkit-transform: translateX(-10%);
-              transform: translateX(-10%);
-      margin-bottom: 0; } }
-  @media screen and (max-width: 800px) {
-    section.service-strip .development div.background {
-      background-size: 65%;
-      margin-top: -11% !important;
-      margin-bottom: -20% !important;
-      -webkit-transform: translateX(-19%);
-      transform: translateX(-19%); } }
-  @media screen and (max-width: 600px) {
-    section.service-strip .development div.background {
-      background-size: 50%;
-      -webkit-transform: translateX(-26%);
-              transform: translateX(-26%);
-      margin-top: -23% !important;
-      margin-bottom: -29% !important; } }
+
+section.section-about .section-inner .laser-content .laser img.certified {
+  padding-top: 0.3%; }
+
+section.section-about .section-inner .laser-content .laser .form-box {
+  margin: 0 auto;
+  text-align: center;
+  background: #4a9ff0;
+  height: 660px;
+  width: 890px; }
 
 @-webkit-keyframes slideInFromLeft {
   0% {
