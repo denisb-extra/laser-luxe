@@ -65,7 +65,67 @@ section.service-info{
                 .service-img:nth-child(5){background:url('../../images/services/lab-pic-5.png') no-repeat;background-size:contain;background-position: center;}//padding: 0 2%
                 .service-img:nth-child(6){background:url('../../images/services/lab-pic-6.png') no-repeat;background-size:contain;background-position: center;}
             }
+            .laser-product{
+                position: absolute;
+                top: 59.6%;
+                right: 0;
+                z-index: -1;
+                img{
+                    max-width:100%;
+                }
+                @media screen and(max-width:1800px){
+                    width: 30%;
+                    top: 62%;
+                }
+                @media screen and(max-width:1600px){
+                    width: 25%;
+                    top: 64%;
+                }
+                @media screen and(max-width:1450px){
+                    width: 20%;
+                    top: 65%;
+                }
+                @media screen and(max-width:1400px){
+                    width: 20%;
+                    top: 68%;
+                }
+                @media screen and(max-width:1250px){
+                    width: 15%;
+                    top: 67%;
+                }
+                @media screen and(max-width:1200px){
+                    width: 15%;
+                    top: 70%;
+                }
+                @media screen and(max-width:1100px){
+                    width: 15%;
+                    top: 73%;
+                }
+                @media screen and(max-width:1050px){
+                    width: 15%;
+                    top: 72%;
+                }
+                @media screen and(max-width:900px){
+                    width: 15%;
+                    top: 72%;
+                }
+                @media screen and(max-width:850px){
+                    width: 15%;
+                    top: 71.5%;
+                }
+                @media screen and(max-width:800px){
+                    width: 15%;
+                    top: 75%;
+                }
+                @media screen and(max-width:800px){
+                    width: 15%;
+                    top: 74.5%;
+                }
+                @media screen and(max-width:600px){
+                    display:none;
+                }
+            }
     }
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     }
 }

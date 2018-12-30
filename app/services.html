@@ -234,6 +234,15 @@
 				autoplay: true,
 				autoplayHoverPause: false,
 			});
+			window.sr = ScrollReveal({ reset: false });
+				sr.reveal('.decor-item', {
+					viewFactor: 0.01,
+					scale: 1,
+					duration: 1500,
+					delay: 200,
+					origin: "right"
+				});
+
 			window.onscroll = function () {onScroll()};//when user scrolls execute myFunction
 			var header = document.getElementById('header');//get header
 			var sticky = header.offsetTop;//get oof set position of header

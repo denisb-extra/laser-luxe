@@ -73,7 +73,7 @@
 	</header>
 
 	<section class="slider-top">
-		<div class="decor">
+		<div class="decor decor-right">
 			<img src="images/index/pipe.png" alt="">
 		</div>
 		<div class="slider">
@@ -98,14 +98,12 @@
 		<div class="section-inner">
 				<h2 class="service-h2 mobile">Our Services</h2>
 		</div>
-			
 			<div class="section-inner">
-					
 				<div class="service-text">
 					<h2 class="desktop">Our Services</h2>
 					<p>Providing product lifecycle solutions from concept to commerciazation,laserLux R&D Ltd. is recognized as a leading innovator in precision joining application offering the highest micro laser welding services utilizing the latest cutting-edge technologies available.</p>
 					<a href="#" class="button">TAKE A CLOSER LOOK</a>
-					<div class="product">
+					<div class="product product-left">
 						<img src="./images/Product.png" alt="product" class="product-img">
 					</div>
 				</div>
@@ -269,6 +267,28 @@
 				autoplay: true,
 				autoplayHoverPause: false,
 			});
+			window.sr = ScrollReveal({ reset: false });
+				sr.reveal('.decor', {
+					viewFactor: 0.01,
+					scale: 1,
+					duration: 1000,
+					delay: 200,
+					origin: "right"
+				});
+				sr.reveal('.laser-product', {
+					viewFactor: 0.01,
+					scale: 1,
+					duration: 1000,
+					delay: 200,
+					origin: "right"
+				});
+				sr.reveal('.product', {
+					viewFactor: 0.01,
+					scale: 1,
+					duration: 2000,
+					delay: 200,
+					origin: "left"
+				});
 			});
 			window.onscroll = function () {onScroll()};//when user scrolls execute myFunction
 			var header = document.getElementById('header');//get header

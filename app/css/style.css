@@ -289,10 +289,7 @@ section.slider-top {
     right: 0;
     top: 60%;
     z-index: 2;
-    width: 30%;
-    opacity: 0;
-    -webkit-animation: 3s ease-in 0.1s 1 slideInFromRight forwards;
-            animation: 3s ease-in 0.1s 1 slideInFromRight forwards; }
+    width: 30%; }
     section.slider-top .decor img {
       width: 100%; }
   section.slider-top .slider {
@@ -443,9 +440,7 @@ section.slider-top {
         position: absolute;
         z-index: -1;
         top: 31%;
-        left: 0px;
-        -webkit-animation: 3s ease-in 0.1s 1 slideInFromLeft forwards;
-                animation: 3s ease-in 0.1s 1 slideInFromLeft forwards; }
+        left: 0px; }
         .section-services .section-inner .service-text .product img {
           width: 85%; }
         @media screen and (max-width: 1800px) {
@@ -985,12 +980,7 @@ section.technology {
       width: 35%; } }
   @media screen and (max-width: 500px) {
     section.technology .section-inner .laser-product {
-      top: 74.4%;
-      width: 35%; } }
-  @media only screen and (max-width: 450px) {
-    section.technology .section-inner .laser-product {
-      top: 73.5%;
-      width: 35%; } }
+      display: none; } }
 
 /* --------------------- /Section Technologies-end ------------------------*/
 /* --------------------- /Section Lorem-start ------------------------*/
@@ -1208,10 +1198,7 @@ section#about-top {
     height: auto;
     top: 6%;
     left: 0;
-    z-index: -1;
-    opacity: 0;
-    -webkit-animation: 5s ease-in 0.1s 1 slideInFromLeft forwards;
-            animation: 5s ease-in 0.1s 1 slideInFromLeft forwards; }
+    z-index: -1; }
     .section-about div.section-inner div.item img {
       width: 75%; }
   @media screen and (max-width: 1700px) {
@@ -1249,39 +1236,7 @@ section#about-top {
         width: 45%; } }
   @media screen and (max-width: 900px) {
     .section-about div.section-inner div.item {
-      top: 32%; }
-      .section-about div.section-inner div.item img {
-        width: 75%; } }
-  @media screen and (max-width: 800px) {
-    .section-about div.section-inner div.item {
-      top: 36%; }
-      .section-about div.section-inner div.item img {
-        width: 75%; } }
-  @media screen and (max-width: 700px) {
-    .section-about div.section-inner div.item {
-      top: 38%; }
-      .section-about div.section-inner div.item img {
-        width: 75%; } }
-  @media screen and (max-width: 600px) {
-    .section-about div.section-inner div.item {
-      top: 39%; }
-      .section-about div.section-inner div.item img {
-        width: 70%; } }
-  @media screen and (max-width: 550px) {
-    .section-about div.section-inner div.item {
-      top: 35%; }
-      .section-about div.section-inner div.item img {
-        width: 70%; } }
-  @media screen and (max-width: 500px) {
-    .section-about div.section-inner div.item {
-      top: 37%; }
-      .section-about div.section-inner div.item img {
-        width: 70%; } }
-  @media screen and (max-width: 450px) {
-    .section-about div.section-inner div.item {
-      top: 40%; }
-      .section-about div.section-inner div.item img {
-        width: 70%; } }
+      display: none; } }
 
 @media screen and (max-width: 600px) {
   .section-about div.section-inner h3 {
@@ -1356,8 +1311,6 @@ section.services-section div.decor-item {
   right: 0;
   width: 27%;
   z-index: -1;
-  -webkit-animation: 2.5s ease-in 0.1s 1 slideInFromRight forwards;
-          animation: 2.5s ease-in 0.1s 1 slideInFromRight forwards;
   overflow: hidden; }
   section.services-section div.decor-item img {
     max-width: 100%;
@@ -1414,6 +1367,11 @@ section.services-section .section-inner {
           width: 150px;
           height: 84px;
           margin: 0 10px 10px 0; } }
+      @media screen and (max-width: 400px) {
+        section.services-section .section-inner .services-container .strip-item {
+          width: 140px;
+          height: 80px;
+          margin: 0 10px 10px 0; } }
     section.services-section .section-inner .services-container .strip-item .background {
       width: 90px;
       height: 120px;
@@ -1442,6 +1400,9 @@ section.services-section .section-inner {
       @media screen and (max-width: 450px) {
         section.services-section .section-inner .services-container .strip-item span {
           font-size: 16px; } }
+      @media screen and (max-width: 400px) {
+        section.services-section .section-inner .services-container .strip-item span {
+          font-size: 14px; } }
     section.services-section .section-inner .services-container .quality-assurance div.background {
       background: url("../../images/technology/Quality_assurance_hover.png") no-repeat 100%; }
       @media screen and (max-width: 600px) {
@@ -1616,7 +1577,7 @@ section#service-top {
 
 section.service-info div.section-inner {
   margin: 0 auto;
-  margin-bottom: 5%; }
+  margin-bottom: 8%; }
   section.service-info div.section-inner .service-cont {
     max-width: 100%;
     height: auto; }
@@ -1699,6 +1660,64 @@ section.service-info div.section-inner {
         background: url("../../images/services/lab-pic-6.png") no-repeat;
         background-size: contain;
         background-position: center; }
+    section.service-info div.section-inner .service-cont .laser-product {
+      position: absolute;
+      top: 59.6%;
+      right: 0;
+      z-index: -1; }
+      section.service-info div.section-inner .service-cont .laser-product img {
+        max-width: 100%; }
+      @media screen and (max-width: 1800px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 30%;
+          top: 62%; } }
+      @media screen and (max-width: 1600px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 25%;
+          top: 64%; } }
+      @media screen and (max-width: 1450px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 20%;
+          top: 65%; } }
+      @media screen and (max-width: 1400px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 20%;
+          top: 68%; } }
+      @media screen and (max-width: 1250px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 67%; } }
+      @media screen and (max-width: 1200px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 70%; } }
+      @media screen and (max-width: 1100px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 73%; } }
+      @media screen and (max-width: 1050px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 72%; } }
+      @media screen and (max-width: 900px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 72%; } }
+      @media screen and (max-width: 850px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 71.5%; } }
+      @media screen and (max-width: 800px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 75%; } }
+      @media screen and (max-width: 800px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          width: 15%;
+          top: 74.5%; } }
+      @media screen and (max-width: 600px) {
+        section.service-info div.section-inner .service-cont .laser-product {
+          display: none; } }
 
 section.top {
   padding-top: 50px;
@@ -1879,12 +1898,108 @@ section.service-strip {
 section.section-about .section-inner .laser-content .laser img.certified {
   padding-top: 0.3%; }
 
-section.section-about .section-inner .laser-content .laser .form-box {
-  margin: 0 auto;
-  text-align: center;
-  background: #4a9ff0;
-  height: 660px;
-  width: 890px; }
+section.section-about {
+  margin-bottom: 5%; }
+  section.section-about .section-inner .laser-content .laser .form-box {
+    margin: 0 auto;
+    text-align: center;
+    background: #4a9ff0;
+    height: 660px;
+    max-width: 890px;
+    color: white;
+    padding: 7.5% 10% 0 10%; }
+    section.section-about .section-inner .laser-content .laser .form-box h2 {
+      color: white;
+      font-size: 56px;
+      margin-bottom: 30px; }
+    section.section-about .section-inner .laser-content .laser .form-box p {
+      font-size: 18px;
+      padding: 1% 0; }
+    section.section-about .section-inner .laser-content .laser .form-box input {
+      border-radius: 30px;
+      height: 46px;
+      width: 48%;
+      font-size: 18px;
+      padding-left: 2%;
+      border: 0;
+      margin: 5% auto 0 auto; }
+      section.section-about .section-inner .laser-content .laser .form-box input::-webkit-input-placeholder {
+        color: #393939;
+        font-family: Cabin Condensed;
+        font-weight: 500;
+        font-size: 16px; }
+      section.section-about .section-inner .laser-content .laser .form-box input::-ms-input-placeholder {
+        color: #393939;
+        font-family: Cabin Condensed;
+        font-weight: 500;
+        font-size: 16px; }
+      section.section-about .section-inner .laser-content .laser .form-box input::placeholder {
+        color: #393939;
+        font-family: Cabin Condensed;
+        font-weight: 500;
+        font-size: 16px; }
+    section.section-about .section-inner .laser-content .laser .form-box .your-name {
+      padding-right: 3.4%; }
+    section.section-about .section-inner .laser-content .laser .form-box .company-name {
+      padding-right: 3.4%; }
+    section.section-about .section-inner .laser-content .laser .form-box textarea {
+      width: 100%;
+      height: 120px;
+      border: 0;
+      border-radius: 30px;
+      margin: 5% auto 0 auto;
+      display: block;
+      font-size: 18px; }
+      section.section-about .section-inner .laser-content .laser .form-box textarea::-webkit-input-placeholder {
+        color: #393939;
+        font-weight: 500;
+        font-family: Cabin Condensed;
+        padding: 3% 0 0 2%; }
+      section.section-about .section-inner .laser-content .laser .form-box textarea::-ms-input-placeholder {
+        color: #393939;
+        font-weight: 500;
+        font-family: Cabin Condensed;
+        padding: 3% 0 0 2%; }
+      section.section-about .section-inner .laser-content .laser .form-box textarea::placeholder {
+        color: #393939;
+        font-weight: 500;
+        font-family: Cabin Condensed;
+        padding: 3% 0 0 2%; }
+        @media screen and (max-width: 800px) {
+          section.section-about .section-inner .laser-content .laser .form-box textarea::-webkit-input-placeholder {
+            font-size: 16px; }
+          section.section-about .section-inner .laser-content .laser .form-box textarea::-ms-input-placeholder {
+            font-size: 16px; }
+          section.section-about .section-inner .laser-content .laser .form-box textarea::placeholder {
+            font-size: 16px; } }
+    section.section-about .section-inner .laser-content .laser .form-box .btn-submit {
+      font-size: 18px;
+      background: #005db7;
+      padding: 0;
+      float: right;
+      width: 35%;
+      height: 60px;
+      color: white;
+      float: right;
+      margin-top: 8%; }
+    @media screen and (max-width: 1000px) {
+      section.section-about .section-inner .laser-content .laser .form-box {
+        margin: 3% 5%; } }
+    @media screen and (max-width: 800px) {
+      section.section-about .section-inner .laser-content .laser .form-box h2#form-title {
+        font-size: 48px; }
+      section.section-about .section-inner .laser-content .laser .form-box p#form-p {
+        font-size: 16px; } }
+    @media screen and (max-width: 660px) {
+      section.section-about .section-inner .laser-content .laser .form-box input {
+        width: 100%; } }
+    @media screen and (max-width: 600px) {
+      section.section-about .section-inner .laser-content .laser .form-box h2#form-title {
+        font-size: 36px; }
+      section.section-about .section-inner .laser-content .laser .form-box p#form-p {
+        font-size: 16px;
+        padding: 0;
+        margin: 0; } }
 
 @-webkit-keyframes slideInFromLeft {
   0% {

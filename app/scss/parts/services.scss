@@ -29,7 +29,7 @@ section.services-section{
         right: 0;
         width: 27%;
         z-index: -1;
-        animation: 2.5s ease-in 0.1s 1 slideInFromRight forwards;
+        //animation: 2.5s ease-in 0.1s 1 slideInFromRight forwards;
         overflow: hidden;
         img{
             max-width: 100%;
@@ -79,6 +79,11 @@ section.services-section{
                     height:84px;
                     margin: 0 10px 10px 0;
                 }
+                @media screen and(max-width:400px){
+                    width: 140px;
+                    height:80px;
+                    margin: 0 10px 10px 0;
+                }
             }
             .strip-item .background{
                 width: 90px;
@@ -108,6 +113,9 @@ section.services-section{
                 }
                 @media screen and(max-width:450px){
                     font-size:16px;
+                }
+                @media screen and(max-width:400px){
+                    font-size:14px;
                 }
             }
             .quality-assurance{

@@ -16,8 +16,8 @@ section.slider-top {
 		top: 60%;
 		z-index: 2;
 		width:30%;
-		opacity:0;
-		animation: 3s ease-in 0.1s 1 slideInFromRight forwards;
+		// opacity:0;
+		// animation: 3s ease-in 0.1s 1 slideInFromRight forwards;
 		img{
 			width: 100%;
 		}
@@ -181,7 +181,7 @@ section.slider-top {
 				z-index: -1;
 				top: 31%;
 				left: 0px;
-				animation: 3s ease-in 0.1s 1 slideInFromLeft forwards;
+				// animation: 3s ease-in 0.1s 1 slideInFromLeft forwards;
 				img{
 					width:85%;
 				}
@@ -876,16 +876,7 @@ section.technology{
 	@media screen and(max-width:500px){
 		.section-inner{
 			.laser-product{
-				top: 74.4%;
-				width: 35%;
-			}
-		}
-	}
-	@media only screen and (max-width : 450px) {
-		.section-inner{
-			.laser-product{
-				top: 73.5%;
-				width: 35%;
+				display:none;
 			}
 		}
 	}

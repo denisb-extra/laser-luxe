@@ -96,7 +96,10 @@
                             <div class="service-img"></div>
                             <div class="service-img"></div>
                             <div class="service-img"></div>
-                        </div>
+						</div>
+						<div class="laser-product">
+						<img src="../images/laser_product.png" alt="" class="laser-product-img">
+					</div>
             </div>
         </div>
     </section>
@@ -198,6 +201,14 @@
 				autoplay: true,
 				autoplayHoverPause: false,
 			});
+			window.sr = ScrollReveal({ reset: false });
+				sr.reveal('.laser-product', {
+					viewFactor: 0.01,
+					scale: 1,
+					duration: 1000,
+					delay: 200,
+					origin: "right"
+				});
 			window.onscroll = function () {onScroll()};//when user scrolls execute myFunction
 			var header = document.getElementById('header');//get header
 			var sticky = header.offsetTop;//get oof set position of header
