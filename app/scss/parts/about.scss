@@ -43,8 +43,21 @@ section#about-top{
         color:white;
     }
 }
-
-.section-about{
+#about-sect{
+	margin-bottom:-1%;
+	@media screen and(max-width:900px){
+		margin-bottom:5%;
+		div.section-inner{
+			h3{
+				padding-top:30px;
+			}
+		}
+	}
+	@media screen and(max-width:600px){
+		margin-bottom:4%;
+	}
+}
+section.section-about{
     div.section-inner{
         margin: 0 auto;
         h3{
@@ -62,9 +75,12 @@ section#about-top{
             font-size:18px;
             padding:0 10px 0 10px;
             text-align: center;
-            margin-bottom:130px;
+			margin-bottom:130px;
+			@media screen and(max-width:900px){
+				margin-bottom:0px;
+			}
             @media screen and(max-width:800px){
-                font-size:16px;
+				font-size:16px;
             }
         }
         div.item{
@@ -83,12 +99,12 @@ section#about-top{
         }
         @media screen and(max-width:1700px){
             div.item{
-                top:17%;
+                top:10%;
             }
         }
         @media screen and(max-width:1600px){
             div.item{
-                top:20%;
+                top:19%;
                 img{
                     width:65%;
                 }
@@ -96,7 +112,7 @@ section#about-top{
         }
         @media screen and(max-width:1500px){
             div.item{
-                top:26%;
+                top:24%;
                 img{
                     width:50%;
                 }
@@ -104,7 +120,7 @@ section#about-top{
         }
         @media screen and(max-width:1400px){
             div.item{
-                top:30%;
+                top:25.5%;
                 img{
                     width:45%;
                 }
@@ -112,7 +128,7 @@ section#about-top{
         }
         @media screen and(max-width:1250px){
             div.item{
-                top:32%;
+                top:26.5%;
                 img{
                     width:45%;
                 }
@@ -120,7 +136,7 @@ section#about-top{
         }
         @media screen and(max-width:1200px){
             div.item{
-                top:34%;
+                top:29.5%;
                 img{
                     width:45%;
                 }
@@ -128,7 +144,7 @@ section#about-top{
         }
         @media screen and(max-width:1000px){
             div.item{
-                top:37%;
+                top:34%;
                 img{
                     width:45%;
                 }

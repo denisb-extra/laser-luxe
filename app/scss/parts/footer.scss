@@ -69,6 +69,12 @@ footer{
 			a{
 				position: absolute;
 				right: 0;
+				top:-23%;
+				@media screen and(max-width:500px){
+					top: 5px;
+					margin-bottom: 15%;
+					bottom: 59%;
+				}
 			}
 		}
 	}

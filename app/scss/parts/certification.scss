@@ -4,9 +4,21 @@ section.section-about{
         .laser-content{
             .laser{
                 img.certified{
-                    padding-top:0.3%;
+					padding-top:0.3%;
+					padding-bottom: 2%;
                 }
             }
         }
     }
+}
+section.service-strip{
+	h2#takeALook{
+		@media screen and(max-width:1000px){
+			text-align:center;
+			padding:0;
+		}
+		@media screen and(max-width:800px){
+			font-size:$font-smallest-h;
+		}
+	}
 }

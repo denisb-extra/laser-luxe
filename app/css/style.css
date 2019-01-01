@@ -1097,7 +1097,13 @@ footer {
           padding-bottom: 0; } }
       footer .footer .footer-inner a {
         position: absolute;
-        right: 0; }
+        right: 0;
+        top: -23%; }
+        @media screen and (max-width: 500px) {
+          footer .footer .footer-inner a {
+            top: 5px;
+            margin-bottom: 15%;
+            bottom: 59%; } }
   @media only screen and (max-width: 1200px) {
     footer .section-inner .site-map {
       display: none; }
@@ -1173,9 +1179,20 @@ section#about-top {
     font-size: 56px;
     color: white; }
 
-.section-about div.section-inner {
+#about-sect {
+  margin-bottom: -1%; }
+  @media screen and (max-width: 900px) {
+    #about-sect {
+      margin-bottom: 5%; }
+      #about-sect div.section-inner h3 {
+        padding-top: 30px; } }
+  @media screen and (max-width: 600px) {
+    #about-sect {
+      margin-bottom: 4%; } }
+
+section.section-about div.section-inner {
   margin: 0 auto; }
-  .section-about div.section-inner h3 {
+  section.section-about div.section-inner h3 {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -1184,64 +1201,67 @@ section#about-top {
     text-align: center;
     padding: 80px 10px 0 10px;
     margin-bottom: 30px; }
-  .section-about div.section-inner p.section-about-p {
+  section.section-about div.section-inner p.section-about-p {
     font-size: 18px;
     padding: 0 10px 0 10px;
     text-align: center;
     margin-bottom: 130px; }
+    @media screen and (max-width: 900px) {
+      section.section-about div.section-inner p.section-about-p {
+        margin-bottom: 0px; } }
     @media screen and (max-width: 800px) {
-      .section-about div.section-inner p.section-about-p {
+      section.section-about div.section-inner p.section-about-p {
         font-size: 16px; } }
-  .section-about div.section-inner div.item {
+  section.section-about div.section-inner div.item {
     position: absolute;
     width: 100%;
     height: auto;
     top: 6%;
     left: 0;
     z-index: -1; }
-    .section-about div.section-inner div.item img {
+    section.section-about div.section-inner div.item img {
       width: 75%; }
   @media screen and (max-width: 1700px) {
-    .section-about div.section-inner div.item {
-      top: 17%; } }
+    section.section-about div.section-inner div.item {
+      top: 10%; } }
   @media screen and (max-width: 1600px) {
-    .section-about div.section-inner div.item {
-      top: 20%; }
-      .section-about div.section-inner div.item img {
+    section.section-about div.section-inner div.item {
+      top: 19%; }
+      section.section-about div.section-inner div.item img {
         width: 65%; } }
   @media screen and (max-width: 1500px) {
-    .section-about div.section-inner div.item {
-      top: 26%; }
-      .section-about div.section-inner div.item img {
+    section.section-about div.section-inner div.item {
+      top: 24%; }
+      section.section-about div.section-inner div.item img {
         width: 50%; } }
   @media screen and (max-width: 1400px) {
-    .section-about div.section-inner div.item {
-      top: 30%; }
-      .section-about div.section-inner div.item img {
+    section.section-about div.section-inner div.item {
+      top: 25.5%; }
+      section.section-about div.section-inner div.item img {
         width: 45%; } }
   @media screen and (max-width: 1250px) {
-    .section-about div.section-inner div.item {
-      top: 32%; }
-      .section-about div.section-inner div.item img {
+    section.section-about div.section-inner div.item {
+      top: 26.5%; }
+      section.section-about div.section-inner div.item img {
         width: 45%; } }
   @media screen and (max-width: 1200px) {
-    .section-about div.section-inner div.item {
-      top: 34%; }
-      .section-about div.section-inner div.item img {
+    section.section-about div.section-inner div.item {
+      top: 29.5%; }
+      section.section-about div.section-inner div.item img {
         width: 45%; } }
   @media screen and (max-width: 1000px) {
-    .section-about div.section-inner div.item {
-      top: 37%; }
-      .section-about div.section-inner div.item img {
+    section.section-about div.section-inner div.item {
+      top: 34%; }
+      section.section-about div.section-inner div.item img {
         width: 45%; } }
   @media screen and (max-width: 900px) {
-    .section-about div.section-inner div.item {
+    section.section-about div.section-inner div.item {
       display: none; } }
 
 @media screen and (max-width: 600px) {
-  .section-about div.section-inner h3 {
+  section.section-about div.section-inner h3 {
     padding: 25px 10px 0 10px; }
-  .section-about div.section-inner p {
+  section.section-about div.section-inner p {
     margin-bottom: 30px; } }
 
 section.technology-pic-about {
@@ -1896,7 +1916,17 @@ section.service-strip {
     background: url("../../images/technology/Development_hover.png") no-repeat 100%; }
 
 section.section-about .section-inner .laser-content .laser img.certified {
-  padding-top: 0.3%; }
+  padding-top: 0.3%;
+  padding-bottom: 2%; }
+
+@media screen and (max-width: 1000px) {
+  section.service-strip h2#takeALook {
+    text-align: center;
+    padding: 0; } }
+
+@media screen and (max-width: 800px) {
+  section.service-strip h2#takeALook {
+    font-size: 28px; } }
 
 section.section-about {
   margin-bottom: 5%; }
@@ -1972,6 +2002,13 @@ section.section-about {
             font-size: 16px; }
           section.section-about .section-inner .laser-content .laser .form-box textarea::placeholder {
             font-size: 16px; } }
+        @media screen and (max-width: 660px) {
+          section.section-about .section-inner .laser-content .laser .form-box textarea::-webkit-input-placeholder {
+            padding: 1.5% 0 0 1.5%; }
+          section.section-about .section-inner .laser-content .laser .form-box textarea::-ms-input-placeholder {
+            padding: 1.5% 0 0 1.5%; }
+          section.section-about .section-inner .laser-content .laser .form-box textarea::placeholder {
+            padding: 1.5% 0 0 1.5%; } }
     section.section-about .section-inner .laser-content .laser .form-box .btn-submit {
       font-size: 18px;
       background: #005db7;
@@ -1991,8 +2028,13 @@ section.section-about {
       section.section-about .section-inner .laser-content .laser .form-box p#form-p {
         font-size: 16px; } }
     @media screen and (max-width: 660px) {
+      section.section-about .section-inner .laser-content .laser .form-box input, section.section-about .section-inner .laser-content .laser .form-box textarea {
+        width: 100%;
+        border-radius: 10px; }
       section.section-about .section-inner .laser-content .laser .form-box input {
-        width: 100%; } }
+        height: 35px; }
+      section.section-about .section-inner .laser-content .laser .form-box textarea {
+        padding: 0; } }
     @media screen and (max-width: 600px) {
       section.section-about .section-inner .laser-content .laser .form-box h2#form-title {
         font-size: 36px; }
